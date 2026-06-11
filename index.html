@@ -10,22 +10,41 @@
     <title>Nele Design Studio</title>
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <div id="root">
       <header class="site-header">
-        <a class="brand brand-compact" href="#top" aria-label="Nele Design Studio home">
+        <a class="brand brand-compact" href="./index.html" aria-label="Nele Design Studio home">
           <span class="brand-mark" aria-hidden="true">NDS</span>
           <span class="brand-text"><strong>Nele</strong><span>Design Studio</span></span>
         </a>
         <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#work">Work</a>
-          <a href="#studio">Studio</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <a data-nav="about" href="./about.html">About Us</a>
+          <a data-nav="services" href="./services.html">Services</a>
+          <a data-nav="work" href="./work.html">Our Work</a>
+          <a data-nav="careers" href="./careers.html">Careers</a>
+          <a data-nav="journal" href="./journal.html">Journal</a>
         </nav>
+        <a class="button button-primary header-cta" href="#contact">Get in Touch</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
       </header>
+      <aside class="mobile-menu" aria-hidden="true" data-mobile-menu>
+        <div class="mobile-menu-top">
+          <a class="menu-back" href="./index.html">Back home</a>
+          <button class="menu-close" type="button" aria-label="Close menu" data-menu-close></button>
+        </div>
+        <nav class="mobile-menu-links" aria-label="Mobile navigation">
+          <a data-nav="about" href="./about.html">About Us</a>
+          <a data-nav="services" href="./services.html">Services</a>
+          <a data-nav="work" href="./work.html">Our Work</a>
+          <a data-nav="careers" href="./careers.html">Careers</a>
+          <a data-nav="journal" href="./journal.html">Journal</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </aside>
       <main>
-        <section class="hero section-band" id="top">
+        <section class="hero section-band" id="top" data-animate>
           <div class="hero-copy">
             <a class="brand" href="#top" aria-label="Nele Design Studio home">
               <span class="brand-mark" aria-hidden="true">NDS</span>
@@ -46,7 +65,7 @@
             </div>
           </div>
         </section>
-        <section class="featured section-band" id="work">
+        <section class="featured section-band" id="work" data-animate>
           <div class="section-heading">
             <p class="eyebrow">Featured Projects</p>
             <h2>Visual stories across space, product, and brand.</h2>
@@ -66,17 +85,17 @@
             </article>
           </div>
         </section>
-        <section class="philosophy" id="studio">
+        <section class="philosophy" id="studio" data-animate>
           <div class="philosophy-media">
             <div class="media-frame media-wide studio-frame"><div class="frame-inner"></div><div class="frame-caption"><span>Studio atmosphere / process film</span><small>Dark editorial media placement</small></div></div>
           </div>
           <div class="philosophy-copy">
-            <p class="eyebrow">Stodio Philosophy</p>
+            <p class="eyebrow">Studio Philosophy</p>
             <h2>We design the feeling before the object, the frame before the image, and the experience before the detail.</h2>
             <p>Every output is treated as a complete visual world: composed, restrained, and built to make the viewer pause.</p>
           </div>
         </section>
-        <section class="services section-band" id="services">
+        <section class="services section-band" id="services" data-animate>
           <div class="section-heading narrow">
             <p class="eyebrow">Services</p>
             <h2>A focused studio model for design-led brands and spaces.</h2>
@@ -87,7 +106,7 @@
             <article class="service-row"><span>03</span><h3>Product Design</h3><p>Creative direction, production-ready design systems, and premium visual presentation tailored to the project context.</p></article>
           </div>
         </section>
-        <section class="trust section-band">
+        <section class="trust section-band" data-animate>
           <p class="eyebrow">Trusted by visionary brands</p>
           <div class="client-marquee" aria-label="Client names">
             <div class="client-track">
@@ -97,23 +116,37 @@
           </div>
         </section>
       </main>
-      <footer class="footer" id="contact">
+      <footer class="footer footer-expanded" id="contact">
         <div>
-          <a class="brand brand-compact" href="#top" aria-label="Nele Design Studio home">
+          <a class="brand brand-compact" href="./index.html" aria-label="Nele Design Studio home">
             <span class="brand-mark" aria-hidden="true">NDS</span>
             <span class="brand-text"><strong>Nele</strong><span>Design Studio</span></span>
           </a>
-          <p>Architectural visualization, graphic design, and product design for premium experiences.</p>
+          <p>A multidisciplinary design studio specializing in architectural visualization, graphic design and product design.</p>
         </div>
-        <div class="footer-contact">
-          <a href="mailto:design@neledesign.studio">hello@neledesign.studio</a>
-          <a href="#top">Back to top</a>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="./about.html">About Us</a>
+          <a href="./services.html">Our Services</a>
+          <a href="./work.html">Our Work</a>
+          <a href="./careers.html">Careers</a>
+          <a href="./journal.html">Journal</a>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <a href="./services.html">Architectural Visualization</a>
+          <a href="./services.html">Graphic Design</a>
+          <a href="./services.html">Product Design</a>
+        </div>
+        <div>
+          <h3>Get In Touch</h3>
+          <p>10A, nele Design House, 11 cross, hsr, Bangalore, India</p>
+          <a href="tel:+9198765xxxxx">+91 98765 xxxxx</a>
+          <a href="mailto:hello@neledesignstudio.com">hello@neledesignstudio.com</a>
         </div>
       </footer>
     </div>
 
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="./src/main.js"></script>
   </body>
 </html>
