@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work — Nele Design Studio</title>
+  <link rel="stylesheet" href="src/work.css" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body class="our-work-page">
+
+  <!-- ===================== HEADER (leave simple — handled externally) ===================== -->
+  <header class="site-header">
+    <a class="brand brand-compact" href="./index.html" aria-label="Nele Design Studio home">
+          <img src="assets/logo.png" alt="Nele Design Studio Logo" class="brand-mark">
+          <span class="brand-text"><strong>Nele</strong><span>Design Studio</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a data-nav="about" href="./about.html">About Us</a>
+      <a data-nav="services" href="./services.html">Services</a>
+      <a data-nav="work" href="./work.html">Our Work</a>
+      <a data-nav="careers" href="./careers.html">Careers</a>
+      <a data-nav="journal" href="./journal.html">Journal</a>
+    </nav>
+      <a class="button button-primary header-cta" href="#contact">Get in Touch</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <aside class="mobile-menu" aria-hidden="true" data-mobile-menu>
+      <div class="mobile-menu-top">
+        <a class="menu-back" href="./index.html">Back home</a>
+        <button class="menu-close" type="button" aria-label="Close menu" data-menu-close></button>
+      </div>
+      <nav class="mobile-menu-links" aria-label="Mobile navigation">
+        <a data-nav="about" href="./about.html">About Us</a>
+        <a data-nav="services" href="./services.html">Services</a>
+        <a data-nav="work" href="./work.html">Our Work</a>
+        <a data-nav="careers" href="./careers.html">Careers</a>
+        <a data-nav="journal" href="./journal.html">Journal</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </aside>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="ow-hero">
+      <div class="container ow-hero-inner">
+
+        <!-- Left: Editorial copy -->
+        <div class="ow-hero-copy reveal-up">
+          <p class="eyebrow">Our Work</p>
+          <h1 class="ow-hero-headline">
+            Designing Spaces.<br />
+            <em>Crafting Brands.</em><br />
+            Creating Impact.
+          </h1>
+          <div class="headline-rule"></div>
+          <p class="ow-hero-body">
+            A curated selection of our work across architecture, branding and product design.
+            Each project is an exploration of clarity, beauty and functionality.
+          </p>
+          <a href="#filter-nav" class="btn btn-primary ow-hero-cta">
+            View All Projects <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+
+        <!-- Right: Three-panel visual strip -->
+        <div class="ow-hero-strip reveal-right">
+          <div class="strip-panel strip-arch">
+            <div class="strip-img-placeholder" style="background:#1F1F1F;" aria-label="Architectural Visualization image"></div>
+            <div class="strip-label">
+              <span class="strip-icon">◆</span>
+              <span>Architectural<br/>Visualization</span>
+            </div>
+          </div>
+          <div class="strip-panel strip-brand">
+            <div class="strip-img-placeholder" style="background:#2a1a1a;" aria-label="Graphic Design image"></div>
+            <div class="strip-label">
+              <span class="strip-icon">◆</span>
+              <span>Graphic<br/>Design</span>
+            </div>
+          </div>
+          <div class="strip-panel strip-product">
+            <div class="strip-img-placeholder" style="background:#1a1a2a;" aria-label="Product Design image"></div>
+            <div class="strip-label">
+              <span class="strip-icon">◇</span>
+              <span>Product<br/>Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== FILTER NAV ===================== -->
+    <nav class="ow-filter" id="filter-nav" aria-label="Project categories">
+      <div class="container ow-filter-inner">
+        <div class="ow-filter-tabs">
+          <button class="filter-tab filter-active" data-filter="all">All Work</button>
+          <button class="filter-tab" data-filter="architecture">Architecture</button>
+          <button class="filter-tab" data-filter="branding">Branding</button>
+          <button class="filter-tab" data-filter="products">Products</button>
+        </div>
+        <a href="#all-projects" class="ow-filter-viewall">View All Projects →</a>
+      </div>
+    </nav>
+
+    <!-- ===================== FEATURED: ARCHITECTURE ===================== -->
+    <section class="ow-featured-project ow-arch" id="all-projects">
+      <div class="ow-fp-img-side reveal-left">
+        <div class="ow-fp-img-placeholder" style="background:#1c1f1e;" aria-label="Serenity Resort & Spa project image">
+          <span class="fp-img-label">Architecture / Hospitality</span>
+        </div>
+      </div>
+      <div class="ow-fp-content-side reveal-up">
+        <p class="eyebrow eyebrow-yellow">Featured Project</p>
+        <h2 class="ow-fp-title">Serenity Resort &amp; Spa</h2>
+        <p class="ow-fp-category">Hospitality Architecture</p>
+        <p class="ow-fp-desc">
+          A tranquil beachfront resort that blends modern architecture with nature,
+          creating immersive experiences for rest and rejuvenation.
+        </p>
+        <div class="ow-fp-stats">
+          <div class="stat-item">
+            <span class="stat-number">150+</span>
+            <span class="stat-label">Renders</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Walkthroughs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">360°</span>
+            <span class="stat-label">Virtual Tour</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Vision Achieved</span>
+          </div>
+        </div>
+        <a href="#" class="ow-case-link">View Case Study →</a>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED: BRANDING ===================== -->
+    <section class="ow-featured-project ow-brand ow-fp-reverse">
+      <div class="ow-fp-content-side reveal-up">
+        <p class="eyebrow eyebrow-yellow">Featured Project</p>
+        <h2 class="ow-fp-title">Aurea Brand Identity</h2>
+        <p class="ow-fp-category">Luxury Real Estate</p>
+        <p class="ow-fp-desc">
+          A complete brand identity that reflects timeless elegance and builds
+          a powerful connection with discerning buyers.
+        </p>
+        <div class="ow-fp-deliverables">
+          <p class="deliverables-label">Deliverables</p>
+          <p class="deliverables-list">
+            Brand Strategy &nbsp;·&nbsp; Logo Design &nbsp;·&nbsp; Brand Guidelines
+            &nbsp;·&nbsp; Stationery &nbsp;·&nbsp; Brochure &nbsp;·&nbsp; Marketing Collateral
+          </p>
+        </div>
+        <a href="#" class="ow-case-link">View Case Study →</a>
+      </div>
+      <div class="ow-fp-img-side reveal-right">
+        <div class="ow-fp-img-placeholder" style="background:#1a0f0f;" aria-label="Aurea Brand Identity project image">
+          <span class="fp-img-label">Branding / Identity</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED: PRODUCT DESIGN ===================== -->
+    <section class="ow-featured-project ow-product">
+      <div class="ow-fp-img-side reveal-left">
+        <div class="ow-fp-img-placeholder" style="background:#141414;" aria-label="Lumen Coffee Brewer product image">
+          <span class="fp-img-label">Product Design</span>
+        </div>
+      </div>
+      <div class="ow-fp-content-side reveal-up">
+        <p class="eyebrow eyebrow-yellow">Featured Project</p>
+        <h2 class="ow-fp-title">Lumen Coffee Brewer</h2>
+        <p class="ow-fp-category">Product Design</p>
+        <p class="ow-fp-desc">
+          Designed for precision and simplicity, Lumen Brewer elevates the everyday
+          brewing ritual with thoughtful design and engineering.
+        </p>
+        <div class="ow-fp-deliverables">
+          <p class="deliverables-label">Deliverables</p>
+          <p class="deliverables-list">
+            Concept &nbsp;·&nbsp; CAD Modelling &nbsp;·&nbsp; Rendering
+            &nbsp;·&nbsp; Prototyping &nbsp;·&nbsp; Manufacturing Support
+          </p>
+        </div>
+        <a href="#" class="ow-case-link">View Case Study →</a>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECT GRID / ALL WORK ===================== -->
+    <section class="ow-grid-section">
+      <div class="container">
+        <div class="ow-grid" id="projects-grid">
+
+          <!-- Card 1 -->
+          <article class="ow-card" data-category="architecture">
+            <div class="ow-card-img" style="background:#1c1f1e;" aria-label="Project image">
+              <span class="ow-card-tag">Architecture</span>
+            </div>
+            <div class="ow-card-body">
+              <h3 class="ow-card-title">Serenity Resort &amp; Spa</h3>
+              <p class="ow-card-desc">A luxury wellness retreat that blends contemporary design with nature.</p>
+              <a href="#" class="ow-case-link ow-case-link--sm">View Case Study →</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="ow-card" data-category="branding">
+            <div class="ow-card-img" style="background:#1a0f0f;" aria-label="Project image">
+              <span class="ow-card-tag">Branding</span>
+            </div>
+            <div class="ow-card-body">
+              <h3 class="ow-card-title">Aurea Brand Identity</h3>
+              <p class="ow-card-desc">A complete brand identity for a luxury hospitality experience.</p>
+              <a href="#" class="ow-case-link ow-case-link--sm">View Case Study →</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="ow-card" data-category="products">
+            <div class="ow-card-img" style="background:#141414;" aria-label="Project image">
+              <span class="ow-card-tag">Product Design</span>
+            </div>
+            <div class="ow-card-body">
+              <h3 class="ow-card-title">Lumen Audio System</h3>
+              <p class="ow-card-desc">Thoughtfully designed audio system that elevates everyday living.</p>
+              <a href="#" class="ow-case-link ow-case-link--sm">View Case Study →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BEHIND THE DESIGN ===================== -->
+    <section class="ow-behind">
+      <div class="container ow-behind-inner">
+        <div class="ow-behind-copy reveal-up">
+          <p class="eyebrow eyebrow-red">Behind The Design</p>
+          <h2 class="ow-behind-headline">Ideas.<br/>Process.<br/>Purpose.</h2>
+          <p class="ow-behind-body">
+            A glimpse into our design process where research meets creativity
+            and concepts turn into experiences.
+          </p>
+        </div>
+        <div class="ow-behind-strip reveal-right">
+          <div class="behind-panel">
+            <div class="behind-img-placeholder" style="background:#e8e4dd;" aria-label="Concept Sketches"></div>
+            <p class="behind-label">Concept Sketches</p>
+          </div>
+          <div class="behind-panel">
+            <div class="behind-img-placeholder" style="background:#d9d2c5;" aria-label="Mood Boards"></div>
+            <p class="behind-label">Mood Boards</p>
+          </div>
+          <div class="behind-panel">
+            <div class="behind-img-placeholder" style="background:#c8c0b4;" aria-label="3D CAD"></div>
+            <p class="behind-label">3D &amp; CAD</p>
+          </div>
+          <div class="behind-panel">
+            <div class="behind-img-placeholder" style="background:#bdb5a9;" aria-label="Material Exploration"></div>
+            <p class="behind-label">Material Exploration</p>
+          </div>
+          <div class="behind-panel">
+            <div class="behind-img-placeholder" style="background:#b0a89d;" aria-label="Design Development"></div>
+            <p class="behind-label">Design Development</p>
+          </div>
+          <!-- Scroll arrow -->
+          <button class="behind-scroll-btn" aria-label="Scroll process panels">↗</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMPACT SECTION ===================== -->
+    <section class="ow-impact">
+      <div class="container ow-impact-inner">
+        <div class="ow-impact-heading reveal-up">
+          <p class="eyebrow">Our Impact</p>
+          <h2 class="ow-impact-title">Impact That<br/><em>Matters.</em></h2>
+        </div>
+        <div class="ow-impact-stats reveal-up">
+          <div class="impact-stat">
+            <div class="impact-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="12" width="7" height="16" stroke="#1F1F1F" stroke-width="1.5"/><rect x="12.5" y="7" width="7" height="21" stroke="#1F1F1F" stroke-width="1.5"/><rect x="21" y="3" width="7" height="25" stroke="#1F1F1F" stroke-width="1.5"/></svg>
+            </div>
+            <span class="impact-num">150+</span>
+            <span class="impact-lbl">Projects Delivered</span>
+          </div>
+          <div class="impact-stat">
+            <div class="impact-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="#1F1F1F" stroke-width="1.5"/><path d="M4 16h24M16 4c-3.5 4-5 8-5 12s1.5 8 5 12M16 4c3.5 4 5 8 5 12s-1.5 8-5 12" stroke="#1F1F1F" stroke-width="1.5"/></svg>
+            </div>
+            <span class="impact-num">20+</span>
+            <span class="impact-lbl">Industries Served</span>
+          </div>
+          <div class="impact-stat">
+            <div class="impact-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 12c0-5.5 4.5-9 10-9s10 3.5 10 9c0 6-6 12-10 16C12 25 6 18 6 12z" stroke="#1F1F1F" stroke-width="1.5"/><circle cx="16" cy="12" r="3" stroke="#1F1F1F" stroke-width="1.5"/></svg>
+            </div>
+            <span class="impact-num">25+</span>
+            <span class="impact-lbl">Countries Reached</span>
+          </div>
+          <div class="impact-stat">
+            <div class="impact-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 3l3.5 7 7.5 1-5.5 5.5 1.5 7.5L16 20l-7 4 1.5-7.5L5 11l7.5-1L16 3z" stroke="#1F1F1F" stroke-width="1.5"/></svg>
+            </div>
+            <span class="impact-num">98%</span>
+            <span class="impact-lbl">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA SECTION ===================== -->
+    <section class="ow-cta">
+      <div class="container ow-cta-inner">
+        <div class="ow-cta-copy reveal-up">
+          <h2 class="ow-cta-headline">
+            Let's create something<br />
+            exceptional <em>together.</em>
+          </h2>
+        </div>
+        <div class="ow-cta-action reveal-up">
+          <a href="/contact" class="btn btn-cta-outline">
+            Let's Connect <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+        <div class="ow-cta-deco" aria-hidden="true"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER (match landing page) ===================== -->
+  <footer class="footer footer-expanded" id="contact">
+    <div>
+      <a class="brand brand-compact" href="./index.html" aria-label="Nele Design Studio home">
+        <img src="assets/NDS_Logo.png" alt="Nele Design Studio Logo" class="brand-mark">
+        <span class="brand-text"><strong>Nele</strong><span>Design Studio</span></span>
+      </a>
+      <p>A multidisciplinary design studio specializing in architectural visualization, graphic design and product design.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="./about.html">About Us</a>
+      <a href="./services.html">Our Services</a>
+      <a href="./work.html">Our Work</a>
+      <a href="./careers.html">Careers</a>
+      <a href="./journal.html">Journal</a>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <a href="#architectural-visualization">Architectural Visualization</a>
+      <a href="#graphic-design">Graphic Design</a>
+      <a href="#product-design">Product Design</a>
+    </div>
+    <div>
+      <h3>Get In Touch</h3>
+      <p> First Floor, Vijayasree Layout, 1, behind Brigade 7 Gardens, Turahalli, Subramanyapura, Bengaluru, Karnataka 560061</p>
+      <a href="tel:+91 99804 63014">+91 99804 63014</a>
+      <a href="mailto:neledesignstudio@gmail.com">neledesignstudio@gmail.com</a>
+    </div>
+  </footer>
+
+  <script>
+    // ── Filter tabs ──────────────────────────────────────────────────────────
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.ow-card');
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => t.classList.remove('filter-active'));
+        tab.classList.add('filter-active');
+        const filter = tab.dataset.filter;
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.style.opacity = match ? '1' : '0.25';
+          card.style.pointerEvents = match ? 'auto' : 'none';
+        });
+      });
+    });
+
+    // ── Mobile menu ──────────────────────────────────────────────────────────
+    const menuBtn = document.querySelector('.mobile-menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const closeBtn = document.querySelector('.mobile-nav-close');
+
+    menuBtn?.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open);
+      mobileNav.setAttribute('aria-hidden', !open);
+    });
+    closeBtn?.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', false);
+      mobileNav.setAttribute('aria-hidden', true);
+    });
+
+    // ── Scroll reveal ────────────────────────────────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // ── Sticky header shadow ─────────────────────────────────────────────────
+    window.addEventListener('scroll', () => {
+      document.getElementById('site-header')
+        .classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+</body>
+</html>

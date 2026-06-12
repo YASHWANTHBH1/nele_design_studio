@@ -1,0 +1,441 @@
+/* ============================================================
+   careers.css  —  Nele Design Studio · Careers Page
+   ============================================================ */
+
+.careers-page {
+  background: var(--warm-ivory);
+  color: var(--charcoal);
+  font-family: var(--font-body);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.cr-hero {
+  padding-top: 72px;
+  background: var(--warm-ivory);
+}
+.cr-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  min-height: 88vh;
+  align-items: center;
+  gap: 0;
+}
+.cr-hero-copy {
+  padding: 5rem 3.5rem 5rem 0;
+}
+.cr-hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 3.8vw, 4rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--charcoal);
+  margin: 0 0 1.5rem;
+}
+.cr-hero-body {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #555;
+  max-width: 400px;
+  margin-bottom: 2.4rem;
+  font-weight: 300;
+}
+
+.cr-hero-img {
+  overflow: hidden;
+  align-self: stretch;
+}
+.cr-hero-img-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 88vh;
+  background: #1c1914;
+  transition: transform .7s ease;
+}
+.cr-hero-img:hover .cr-hero-img-placeholder {
+  transform: scale(1.02);
+}
+
+@media (max-width: 968px) {
+  .cr-hero-inner { grid-template-columns: 1fr; min-height: auto; }
+  .cr-hero-copy { padding: 4rem 0 2rem; }
+  .cr-hero-img-placeholder { min-height: 60vw; }
+}
+
+/* ============================================================
+   VALUES
+   ============================================================ */
+.cr-values {
+  background: var(--stone-grey);
+  padding: 7rem 0;
+}
+.cr-values-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.cr-values-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.5vw, 2.6rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--charcoal);
+  margin: 0;
+}
+.cr-values-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  background: rgba(31,31,31,.08);
+}
+.value-card {
+  background: var(--stone-grey);
+  padding: 2.8rem 1.8rem;
+  text-align: center;
+  border-right: 1px solid rgba(31,31,31,.1);
+  transition: background .25s;
+}
+.value-card:last-child { border-right: none; }
+.value-card:hover { background: var(--warm-ivory); }
+.value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem;
+  width: 52px;
+  height: 52px;
+}
+.value-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  margin: 0 0 0.8rem;
+}
+.value-desc {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #666;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .cr-values-grid { grid-template-columns: repeat(3, 1fr); }
+  .value-card { border-right: 1px solid rgba(31,31,31,.1); border-bottom: 1px solid rgba(31,31,31,.1); }
+}
+@media (max-width: 560px) {
+  .cr-values-grid { grid-template-columns: repeat(2, 1fr); }
+  .cr-values { padding: 5rem 0; }
+}
+
+/* ============================================================
+   OPEN POSITIONS
+   ============================================================ */
+.cr-positions {
+  background: var(--warm-ivory);
+  padding: 7rem 0;
+}
+.cr-positions-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.cr-positions-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--charcoal);
+  margin: 0;
+}
+.cr-positions-speculative {
+  text-decoration: none;
+  font-size: 0.78rem;
+  color: #888;
+  letter-spacing: 0.04em;
+  transition: color .2s;
+  white-space: nowrap;
+}
+.cr-positions-speculative strong { color: var(--ruby-red); font-weight: 500; }
+.cr-positions-speculative:hover strong { text-decoration: underline; }
+
+/* Job rows */
+.cr-jobs-list {
+  border-top: 1px solid var(--stone-grey);
+}
+.cr-job-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--stone-grey);
+  transition: background .2s;
+}
+.cr-job-row:hover {
+  background: rgba(244,180,0,.04);
+  margin: 0 -2rem;
+  padding: 1.6rem 2rem;
+}
+.cr-job-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.01em;
+}
+.cr-job-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cr-job-type {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.72rem;
+  color: #777;
+  letter-spacing: 0.04em;
+}
+.cr-job-type--intern { color: var(--ruby-red); }
+.cr-job-dot { color: #bbb; font-size: 0.8rem; }
+.cr-job-location {
+  font-size: 0.72rem;
+  color: #888;
+  font-weight: 300;
+}
+.cr-job-desc {
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #666;
+  font-weight: 300;
+  margin: 0;
+}
+.cr-job-btn {
+  border: 1.5px solid var(--charcoal);
+  color: var(--charcoal);
+  padding: 0.65rem 1.4rem;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  background: transparent;
+  transition: background .22s, color .22s;
+}
+.cr-job-btn:hover {
+  background: var(--charcoal);
+  color: #fff;
+}
+
+/* Speculative apply */
+.cr-speculative {
+  margin-top: 3.5rem;
+  padding: 2.5rem 2.5rem;
+  background: rgba(166,15,45,.04);
+  border-left: 3px solid var(--ruby-red);
+}
+.cr-spec-eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ruby-red);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.cr-spec-body {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .cr-job-row {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  .cr-job-row:hover { margin: 0; padding: 1.6rem 0; }
+  .cr-job-btn { align-self: flex-start; }
+  .cr-positions { padding: 5rem 0; }
+}
+
+/* ============================================================
+   CULTURE
+   ============================================================ */
+.cr-culture {
+  background: var(--warm-ivory);
+  border-top: 1px solid var(--stone-grey);
+}
+.cr-culture-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  min-height: 64vh;
+  align-items: stretch;
+}
+.cr-culture-copy {
+  padding: 5rem 4rem 5rem 2rem;
+  max-width: var(--container-max);
+  padding-left: calc((100vw - var(--container-max)) / 2 + 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cr-culture-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  color: var(--charcoal);
+  margin: 0 0 1.5rem;
+}
+.cr-culture-body {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #555;
+  font-weight: 300;
+}
+.cr-culture-img {
+  overflow: hidden;
+}
+.cr-culture-img-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 64vh;
+  background: #1e1812;
+  transition: transform .7s ease;
+}
+.cr-culture-img:hover .cr-culture-img-placeholder {
+  transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .cr-culture-inner { grid-template-columns: 1fr; }
+  .cr-culture-copy { padding: 4rem 1.25rem; }
+  .cr-culture-img-placeholder { min-height: 55vw; }
+}
+
+/* ============================================================
+   WHY JOIN NDS
+   ============================================================ */
+.cr-why {
+  background: var(--warm-ivory);
+  padding: 7rem 0;
+  border-top: 1px solid var(--stone-grey);
+}
+.cr-why-heading {
+  margin-bottom: 4rem;
+}
+.cr-why-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--charcoal);
+  margin: 0;
+}
+.cr-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+.cr-why-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.cr-why-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+  opacity: .75;
+}
+.cr-why-card-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  margin: 0;
+}
+.cr-why-card-desc {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #666;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .cr-why-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+  .cr-why { padding: 5rem 0; }
+}
+@media (max-width: 480px) {
+  .cr-why-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   FINAL CTA (Sun Yellow)
+   ============================================================ */
+.cr-cta {
+  background: var(--sun-yellow);
+  padding: 6rem 0;
+}
+.cr-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.cr-cta-eyebrow {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(31,31,31,.6);
+  margin-bottom: 0.8rem;
+}
+.cr-cta-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--charcoal);
+  margin: 0 0 0.8rem;
+}
+.cr-cta-sub {
+  font-size: 0.9rem;
+  color: rgba(31,31,31,.65);
+  font-weight: 300;
+  margin: 0;
+}
+.cr-cta-btn {
+  background: var(--charcoal);
+  color: #fff;
+  padding: 1rem 2.2rem;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  transition: background .25s, transform .25s;
+}
+.cr-cta-btn:hover {
+  background: var(--ruby-red);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cr-cta-inner { flex-direction: column; align-items: flex-start; }
+  .cr-cta { padding: 5rem 0; }
+}
