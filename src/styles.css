@@ -150,15 +150,21 @@ img.brand-mark {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
-  align-items: stretch;
-  gap: clamp(34px, 5vw, 70px);
-  min-height: calc(100vh - 85px);
+  align-items: start; /* align content to top on desktop */
+  gap: clamp(24px, 4vw, 48px);
+  min-height: calc(85vh - 85px); /* reduce vertical space so content appears higher */
+}
+
+/* Reduce top padding specifically for the hero so content moves upward */
+.hero.section-band {
+  padding-top: clamp(24px, 3.5vw, 40px);
+  padding-bottom: clamp(40px, 6vw, 60px);
 }
 
 .hero-copy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* pin text to top */
   max-width: 660px;
 }
 
@@ -270,6 +276,107 @@ h3 {
   min-height: 100%;
 }
 
+/* Hero video - responsive sizing and layout */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: 0; /* sit above decorative background, below captions */
+}
+
+/* Image element used in media frames */
+.frame-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
+}
+
+/* Tighter desktop sizing so the media frame sits to the right */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  min-height: 420px;
+}
+.media-frame {
+  min-height: 320px;
+}
+
+/* constrain the hero's media frame to the video's aspect ratio */
+.hero-frame {
+  align-items: flex-start;
+  aspect-ratio: 16 / 9;
+  max-width: 900px; /* increased so video appears larger */
+  width: 100%;
+  min-height: auto;
+}
+
+/* Layout adjustments for larger screens */
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr minmax(360px, 900px); /* give video column more room */
+    min-height: calc(80vh - 85px);
+  }
+  .media-frame {
+    min-height: 480px;
+  }
+}
+
+/* Tame hero typography so it fits beside the video without overlap */
+.hero h1 {
+  font-size: clamp(34px, 6vw, 72px); /* larger headline to match increased video */
+  line-height: 1.02;
+  margin-bottom: 18px;
+}
+.hero .hero-lede {
+  font-size: clamp(15px, 1.6vw, 18px);
+  max-width: 520px;
+}
+
+/* caption above video */
+.frame-caption {
+  z-index: 2;
+}
+
+/* Mobile: stack the video first and make it fill the viewport */
+@media (max-width: 1023px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse; /* show video first, text after */
+    gap: 16px;
+    min-height: 85vh; /* slightly less than full viewport so text is visible sooner */
+  }
+  .hero-visual {
+    width: 100%;
+    min-height: 75vh; /* video fills most of the screen */
+  }
+  .media-frame {
+    min-height: 75vh;
+  }
+  .frame-caption {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    background: rgba(31, 31, 31, 0.6);
+  }
+  .hero-copy {
+    padding: 28px 20px;
+    background: transparent;
+    z-index: 2;
+  }
+  .hero-video {
+    z-index: 0;
+  }
+}
+
 .frame-inner {
   position: absolute;
   inset: 0;
@@ -283,6 +390,11 @@ h3 {
   background:
     linear-gradient(90deg, rgba(31, 31, 31, 0.22), transparent 50%),
     linear-gradient(130deg, #d9d2c5 0 30%, #f7f3ec 30% 52%, #f4b400 52% 66%, #1f1f1f 66%);
+}
+
+/* Ensure hero media sits at the top of its frame */
+.hero-frame {
+  align-items: flex-start;
 }
 
 .project-product .frame-inner {
