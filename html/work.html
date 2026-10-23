@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our Work — Nele Design Studio's architectural visualization projects: photorealistic renders, walkthroughs and virtual tours." />
+  <title>Our Work — Nele Design Studio</title>
+  <link rel="stylesheet" href="../src/universal.css" />
+  <link rel="stylesheet" href="../src/work.css" />
+</head>
+<body class="work-page">
+
+  <!-- ===================== SHARED HEADER ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="logo-wrap" href="./index.html" aria-label="Nele Design Studio home">
+        <span class="logo-bg">
+          <img src="../assets/logo.png" alt="Nele Design Studio logo" />
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav="home" href="./index.html">Home</a>
+        <a data-nav="about" href="./about.html">About Us</a>
+        <a data-nav="services" href="./services.html">Services</a>
+        <a data-nav="work" href="./work.html">Our Work</a>
+        <a data-nav="careers" href="./careers.html">Careers</a>
+        <a data-nav="journal" href="./journal.html">Journal</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button nav-cta" href="tel:+919980463014">Get in Touch</a>
+        <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== SHARED MOBILE NAV ===================== -->
+  <aside class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav-close" type="button" aria-label="Close menu" id="mobile-nav-close">×</button>
+    <nav aria-label="Mobile navigation">
+      <a data-nav="home" href="./index.html">Home</a>
+      <a data-nav="about" href="./about.html">About Us</a>
+      <a data-nav="services" href="./services.html">Services</a>
+      <a data-nav="work" href="./work.html">Our Work</a>
+      <a data-nav="careers" href="./careers.html">Careers</a>
+      <a data-nav="journal" href="./journal.html">Journal</a>
+      <a href="tel:+919980463014">Contact Us</a>
+    </nav>
+  </aside>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="wk-hero">
+      <div class="container wk-hero-inner">
+        <div class="wk-hero-copy" data-animate>
+          <p class="eyebrow eyebrow--yellow">Our Work</p>
+          <h1 class="wk-hero-headline">
+            Designed to be<br /><em>experienced.</em>
+          </h1>
+          <div class="rule"></div>
+          <p class="wk-hero-body">
+            Projects that blend creativity, strategy and craftsmanship to
+            create lasting impact and meaningful experiences.
+          </p>
+          <a href="#explore" class="button button--primary">
+            View All Projects <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+
+        <!-- Three-panel strip: first image of three projects -->
+        <div class="wk-hero-strip" data-animate data-animate-delay="150">
+          <div class="wk-strip-panel">
+            <img class="wk-hero-img" data-base="../assets/work1" data-ext="0" src="../assets/work1.png" alt="Harish Flat" loading="eager" />
+            <span class="wk-strip-label">Architectural<br/>Visualization</span>
+          </div>
+          <div class="wk-strip-panel">
+            <img class="wk-hero-img" data-base="../assets/work2" data-ext="0" src="../assets/work2.png" alt="Jatin Villa" loading="eager" />
+            <span class="wk-strip-label">Graphic<br/>Design</span>
+          </div>
+          <div class="wk-strip-panel">
+            <img class="wk-hero-img" data-base="../assets/work3" data-ext="0" src="../assets/work3.png" alt="Prasad Villa" loading="eager" />
+            <span class="wk-strip-label">product<br/>Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPLORE OUR WORK ===================== -->
+    <section class="wk-explore" id="explore">
+      <div class="container">
+
+        <div class="wk-explore-head" data-animate>
+          <div>
+            <p class="eyebrow eyebrow--yellow">Explore Our Work</p>
+            <h2 class="wk-explore-title">Architectural <em>Visualization.</em></h2>
+          </div>
+          <p class="wk-explore-count" id="wk-count" aria-live="polite"></p>
+        </div>
+
+        <!-- Cards are generated from the WORKS list in the script below -->
+        <div class="wk-grid" id="wk-grid"></div>
+
+        <div class="wk-more" id="wk-more-wrap">
+          <button type="button" class="button wk-more-btn" id="wk-more-btn">
+            See All Works <span class="btn-arrow">↓</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== BEHIND THE DESIGN ===================== -->
+    <section class="wk-behind">
+      <div class="container wk-behind-inner">
+        <div class="wk-behind-copy" data-animate>
+          <p class="eyebrow eyebrow--yellow">Behind The Design</p>
+          <h2 class="wk-behind-title">The journey<br />from concept to <em>reality.</em></h2>
+          <p class="wk-behind-body">
+            A glimpse into our design process where research meets creativity
+            and concepts turn into experiences.
+          </p>
+        </div>
+        <div class="wk-behind-wrap" data-animate data-animate-delay="120">
+          <!-- Images: work4.png to work8.png (solid colour shows if an image is missing) -->
+          <div class="wk-behind-strip" id="wk-behind-strip">
+            <figure class="wk-behind-item">
+              <div class="wk-behind-img" style="background:#e6e0d4;">
+                <img class="wk-behind-photo" data-base="../assets/work4" data-ext="0" src="../assets/work4.png" alt="Concept Sketches" loading="lazy" />
+              </div>
+              <figcaption>Concept Sketches</figcaption>
+            </figure>
+            <figure class="wk-behind-item">
+              <div class="wk-behind-img" style="background:#d9d2c5;">
+                <img class="wk-behind-photo" data-base="../assets/work5" data-ext="0" src="../assets/work5.png" alt="Mood Boards" loading="lazy" />
+              </div>
+              <figcaption>Mood Boards</figcaption>
+            </figure>
+            <figure class="wk-behind-item">
+              <div class="wk-behind-img" style="background:#cbc3b5;">
+                <img class="wk-behind-photo" data-base="../assets/work6" data-ext="0" src="../assets/work6.png" alt="3D Development" loading="lazy" />
+              </div>
+              <figcaption>3D Development</figcaption>
+            </figure>
+            <figure class="wk-behind-item">
+              <div class="wk-behind-img" style="background:#bdb4a5;">
+                <img class="wk-behind-photo" data-base="../assets/work7" data-ext="0" src="../assets/work7.png" alt="Material Exploration" loading="lazy" />
+              </div>
+              <figcaption>Material Exploration</figcaption>
+            </figure>
+            <figure class="wk-behind-item">
+              <div class="wk-behind-img" style="background:#b0a696;">
+                <img class="wk-behind-photo" data-base="../assets/work8" data-ext="0" src="../assets/work8.png" alt="Final Renders" loading="lazy" />
+              </div>
+              <figcaption>Final Renders</figcaption>
+            </figure>
+          </div>
+          <button type="button" class="wk-behind-next" id="wk-behind-next" aria-label="Scroll process images">→</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== IMPACT ===================== -->
+    <section class="wk-impact">
+      <div class="container">
+        <div class="wk-impact-head" data-animate>
+          <p class="eyebrow eyebrow--yellow">Our Impact</p>
+          <h2 class="wk-impact-title">Numbers that reflect<br />our commitment.</h2>
+        </div>
+        <div class="wk-impact-grid" data-animate data-animate-delay="100">
+          <div class="wk-impact-item">
+            <span class="wk-impact-num">150+</span>
+            <span class="wk-impact-lbl">Projects Delivered</span>
+          </div>
+          <div class="wk-impact-item">
+            <span class="wk-impact-num">20+</span>
+            <span class="wk-impact-lbl">Industries Served</span>
+          </div>
+          <div class="wk-impact-item">
+            <span class="wk-impact-num">98%</span>
+            <span class="wk-impact-lbl">Client Satisfaction</span>
+          </div>
+          <div class="wk-impact-item">
+            <span class="wk-impact-num">25+</span>
+            <span class="wk-impact-lbl">Cities &amp; Clients</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="wk-cta">
+      <div class="container wk-cta-inner" data-animate>
+        <h2 class="wk-cta-headline">Let's create something<br />exceptional <em>together.</em></h2>
+        <a href="tel:+919980463014" class="button wk-cta-btn">
+          Let's Connect <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== SHARED FOOTER ===================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo-wrap footer-logo" href="./index.html" aria-label="Nele Design Studio home">
+          <span class="logo-bg">
+            <img src="../assets/NDS_Logo.png" alt="Nele Design Studio logo" />
+          </span>
+        </a>
+        <p class="footer-tagline">
+          A multidisciplinary design studio specializing in
+          architectural visualization, graphic design and
+          product design.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <ul>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./services.html">Our Services</a></li>
+          <li><a href="./work.html">Our Work</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+          <li><a href="./journal.html">Journal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Services</h3>
+        <ul>
+          <li><a href="./services.html#architectural-visualization">Architectural Visualization</a></li>
+          <li><a href="./services.html#graphic-design">Graphic Design</a></li>
+          <li><a href="./services.html#product-design">Product Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Get In Touch</h3>
+        <address>
+          <a class="footer-contact-item" href="tel:+919980463014">+91 99804 63014</a>
+          <a class="footer-contact-item" href="mailto:neledesignstudio@gmail.com">neledesignstudio@gmail.com</a>
+          <span class="footer-contact-item">
+            First Floor, Vijayasree Layout, 1,
+            behind Brigade 7 Gardens, Turahalli,
+            Subramanyapura, Bengaluru,
+            Karnataka 560061
+          </span>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Nele Design Studio. All rights reserved.</p>
+        <a href="./privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ==========================================================
+       WORKS LIST — edit this to add / change projects
+       ----------------------------------------------------------
+       Images live in ../assets/ and are named  {prefix}{number}
+       e.g. prefix "harishflat", count 10 -> harishflat1 ... harishflat10
+       File type is detected automatically (png, jpg, jpeg, webp).
+       Any image that can't be found is skipped, so a wrong count is safe.
+       To add a project: add one object below.
+       ========================================================== */
+    const IMG_EXTS = ['png', 'jpg', 'jpeg', 'webp'];
+
+    const WORKS = [
+      { id: 1, title: 'Harish Flat',          type: 'Residential Interior', prefix: 'harishflat',    count: 10, desc: 'Apartment interiors visualized with refined materials, warm lighting and a calm, livable layout.' },
+      { id: 2, title: 'Jatin Villa',          type: 'Villa',                prefix: 'jatinvilla',    count: 9,  desc: 'A contemporary villa brought to life through photorealistic exterior and interior renders.' },
+      { id: 3, title: 'Manu Cottage',         type: 'Facade Design',        prefix: 'manucottage',   count: 3,  desc: 'A facade design that balances character, proportion and a warm connection with its setting.' },
+      { id: 4, title: 'Mr Bharat',            type: 'Facade Design',        prefix: 'bharat',        count: 5,  desc: 'A considered facade concept with clean lines, texture and strong street presence.' },
+      { id: 5, title: 'Prasad Villa',         type: 'Villa',                prefix: 'prasadvilla',   count: 8,  desc: 'Villa visuals that capture the scale, materiality and mood of the finished home.' },
+      { id: 6, title: 'Ramesh Facade',        type: 'Facade Design',        prefix: 'rameshfacade',  count: 3,  desc: 'Facade design explorations that give the building a confident, timeless identity.' },
+      { id: 7, title: 'Ramesh Villa',         type: 'Villa',                prefix: 'rameshvilla',   count: 7,  desc: 'Detailed villa renders showcasing spaces, light and finishes before construction begins.' },
+      { id: 8, title: 'Santhosh Villa',       type: 'Villa',                prefix: 'santhosh',      count: 10, desc: 'A villa visualized end to end, from the exterior elevation to the interior details.' },
+      { id: 9, title: 'Tanmay Dental Clinic', type: 'Clinic',               prefix: 'tanmay',        count: 8,  desc: 'A clean, welcoming clinic design visualized to feel professional, calm and patient friendly.' }
+    ];
+
+    const BATCH_SIZE = 3;          // works revealed at a time
+    const SLIDE_INTERVAL = 3000;   // 3 seconds per image
+
+    /* ── Hero images: try other file types if .png is missing ── */
+    document.querySelectorAll('.wk-hero-img').forEach(img => {
+      img.addEventListener('error', () => {
+        const next = Number(img.dataset.ext) + 1;
+        if (next < IMG_EXTS.length) {
+          img.dataset.ext = next;
+          img.src = `${img.dataset.base}.${IMG_EXTS[next]}`;
+        }
+      });
+    });
+
+    /* ── Build cards ───────────────────────────────────────── */
+    const grid = document.getElementById('wk-grid');
+    const moreBtn = document.getElementById('wk-more-btn');
+    const moreWrap = document.getElementById('wk-more-wrap');
+    const countEl = document.getElementById('wk-count');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const pad = (n) => String(n).padStart(2, '0');
+
+    function slideSources(w) {
+      const list = [];
+      for (let n = 1; n <= w.count; n++) list.push(`../assets/${w.prefix}${n}`);
+      return list;
+    }
+
+    function buildCard(w, index) {
+      const card = document.createElement('article');
+      card.className = 'wk-card';
+      card.dataset.index = index;
+
+      const slides = slideSources(w).map((base, i) =>
+        `<img class="wk-slide${i === 0 ? ' is-active' : ''}" data-base="${base}" data-ext="0" src="${base}.${IMG_EXTS[0]}" alt="${w.title} — view ${i + 1}" ${i === 0 ? '' : 'loading="lazy"'} />`
+      ).join('');
+
+      card.innerHTML = `
+        <div class="wk-media">
+          <div class="wk-slides">${slides}</div>
+          <span class="wk-tag">Architectural Visualization</span>
+          <div class="wk-dots" aria-hidden="true"></div>
+        </div>
+        <div class="wk-body">
+          <div class="wk-meta"><span class="wk-num">${pad(w.id)}</span><span class="wk-type">${w.type}</span></div>
+          <h3 class="wk-title">${w.title}</h3>
+          <p class="wk-desc">${w.desc}</p>
+          <a href="#" class="wk-link">View Case Study <span>→</span></a>
+        </div>`;
+      return card;
+    }
+
+    /* ── Slideshow (3s, crossfade, skips broken images) ────── */
+    function initSlideshow(card, order) {
+      const wrap = card.querySelector('.wk-slides');
+      const dots = card.querySelector('.wk-dots');
+      let current = 0;
+
+      const getSlides = () => Array.from(wrap.querySelectorAll('.wk-slide'));
+
+      const renderDots = () => {
+        const s = getSlides();
+        dots.innerHTML = s.length > 1 ? s.map((_, i) => `<i class="${i === current ? 'is-on' : ''}"></i>`).join('') : '';
+      };
+
+      const show = (i) => {
+        const s = getSlides();
+        if (!s.length) return;
+        current = ((i % s.length) + s.length) % s.length;
+        s.forEach((el, n) => el.classList.toggle('is-active', n === current));
+        renderDots();
+      };
+
+      // Try other file types, then skip images that don't exist
+      getSlides().forEach(img => {
+        img.addEventListener('error', () => {
+          const next = Number(img.dataset.ext) + 1;
+          if (next < IMG_EXTS.length) {
+            img.dataset.ext = next;
+            img.src = `${img.dataset.base}.${IMG_EXTS[next]}`;
+          } else {
+            img.remove();
+            show(Math.min(current, getSlides().length - 1));
+          }
+        });
+      });
+
+      renderDots();
+      if (reduceMotion) return;
+
+      // Stagger each card so they don't all flip together
+      setTimeout(() => {
+        setInterval(() => {
+          if (document.hidden || card.offsetParent === null) return; // hidden card / tab
+          if (getSlides().length > 1) show(current + 1);
+        }, SLIDE_INTERVAL);
+      }, (order % BATCH_SIZE) * 600);
+    }
+
+    WORKS.forEach((w, i) => {
+      const card = buildCard(w, i);
+      if (i >= BATCH_SIZE) card.hidden = true;
+      grid.appendChild(card);
+      initSlideshow(card, i);
+    });
+
+    /* ── See All / reveal next batch ───────────────────────── */
+    function updateMore() {
+      const hidden = grid.querySelectorAll('.wk-card[hidden]').length;
+      const shown = WORKS.length - hidden;
+      countEl.textContent = `Showing ${shown} of ${WORKS.length} projects`;
+      if (hidden === 0) moreWrap.hidden = true;
+    }
+
+    moreBtn.addEventListener('click', () => {
+      const hiddenCards = Array.from(grid.querySelectorAll('.wk-card[hidden]')).slice(0, BATCH_SIZE);
+      hiddenCards.forEach((card, i) => {
+        card.hidden = false;
+        card.classList.add('is-entering');
+        setTimeout(() => card.classList.remove('is-entering'), 60 + i * 120);
+      });
+      updateMore();
+    });
+
+    if (WORKS.length <= BATCH_SIZE) moreWrap.hidden = true;
+    updateMore();
+
+    /* ── Behind the design: scroll arrow ───────────────────── */
+    document.getElementById('wk-behind-next')?.addEventListener('click', () => {
+      const strip = document.getElementById('wk-behind-strip');
+      strip.scrollBy({ left: 240, behavior: 'smooth' });
+    });
+
+    /* ── Shared mobile navigation ──────────────────────────── */
+    const menuBtn = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const closeBtn = document.getElementById('mobile-nav-close');
+    const setMobileNav = (open) => {
+      mobileNav?.classList.toggle('open', open);
+      mobileNav?.setAttribute('aria-hidden', String(!open));
+      menuBtn?.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('menu-open', open);
+    };
+    menuBtn?.addEventListener('click', () => setMobileNav(true));
+    closeBtn?.addEventListener('click', () => setMobileNav(false));
+    mobileNav?.querySelectorAll('a').forEach(l => l.addEventListener('click', () => setMobileNav(false)));
+
+    /* ── Scroll reveal ─────────────────────────────────────── */
+    const revealElements = document.querySelectorAll('[data-animate]');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const delay = entry.target.dataset.animateDelay || 0;
+            setTimeout(() => entry.target.classList.add('is-visible'), Number(delay));
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      revealElements.forEach(el => observer.observe(el));
+    } else {
+      revealElements.forEach(el => el.classList.add('is-visible'));
+    }
+
+    /* ── Sticky header ─────────────────────────────────────── */
+    const siteHeader = document.getElementById('site-header');
+    const updateHeader = () => siteHeader?.classList.toggle('scrolled', window.scrollY > 40);
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    /* ── Active nav ────────────────────────────────────────── */
+    document.querySelectorAll('[data-nav="work"]').forEach(l => l.classList.add('nav-active'));
+  </script>
+</body>
+</html>

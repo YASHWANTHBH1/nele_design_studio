@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Journal — Nele Design Studio. Ideas, perspectives and inspiration on design, architecture and branding." />
+  <title>Journal — Nele Design Studio</title>
+  <link rel="stylesheet" href="../src/universal.css" />
+  <link rel="stylesheet" href="../src/journal.css" />
+</head>
+<body class="journal-page">
+
+  <!-- ===================== SHARED HEADER ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="logo-wrap" href="./index.html" aria-label="Nele Design Studio home">
+        <span class="logo-bg">
+          <img src="../assets/logo.png" alt="Nele Design Studio logo" />
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav="home" href="./index.html">Home</a>
+        <a data-nav="about" href="./about.html">About Us</a>
+        <a data-nav="services" href="./services.html">Services</a>
+        <a data-nav="work" href="./work.html">Our Work</a>
+        <a data-nav="careers" href="./careers.html">Careers</a>
+        <a data-nav="journal" href="./journal.html">Journal</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button nav-cta" href="tel:+919980463014">Get in Touch</a>
+        <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== SHARED MOBILE NAV ===================== -->
+  <aside class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav-close" type="button" aria-label="Close menu" id="mobile-nav-close">×</button>
+    <nav aria-label="Mobile navigation">
+      <a data-nav="home" href="./index.html">Home</a>
+      <a data-nav="about" href="./about.html">About Us</a>
+      <a data-nav="services" href="./services.html">Services</a>
+      <a data-nav="work" href="./work.html">Our Work</a>
+      <a data-nav="careers" href="./careers.html">Careers</a>
+      <a data-nav="journal" href="./journal.html">Journal</a>
+      <a href="tel:+919980463014">Contact Us</a>
+    </nav>
+  </aside>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="jn-hero">
+      <div class="container jn-hero-inner">
+        <div class="jn-hero-copy" data-animate>
+          <p class="eyebrow eyebrow--red">The Journal</p>
+          <h1 class="jn-hero-headline">
+            Ideas.<br />
+            Perspectives.<br />
+            <em>Inspiration.</em>
+          </h1>
+          <div class="rule"></div>
+          <p class="jn-hero-body">
+            Thoughts on design, architecture, brands and products.
+            Stories that inform, inspire and spark ideas.
+          </p>
+          <a href="#browse" class="button button--primary">
+            Explore Articles <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+        <div class="jn-hero-img" data-animate data-animate-delay="150">
+          <div class="jn-hero-img-ph" aria-label="Design inspiration"></div>
+          <span class="jn-rotated-label" aria-hidden="true">Insights That Inspire Experiences</span>
+          <span class="jn-scroll-hint" aria-hidden="true">↓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TOPIC NAV ===================== -->
+    <nav class="jn-topics" id="browse" aria-label="Browse by topic">
+      <div class="container jn-topics-inner">
+        <span class="jn-topics-label">Browse By Topic</span>
+        <div class="jn-tabs" role="tablist">
+          <button class="jn-tab jn-tab--active" role="tab" data-topic="all" aria-selected="true">All</button>
+          <button class="jn-tab" role="tab" data-topic="architecture" aria-selected="false">Architecture</button>
+          <button class="jn-tab" role="tab" data-topic="design" aria-selected="false">Design</button>
+          <button class="jn-tab" role="tab" data-topic="branding" aria-selected="false">Branding</button>
+          <button class="jn-tab" role="tab" data-topic="product-design" aria-selected="false">Product Design</button>
+          <button class="jn-tab" role="tab" data-topic="studio-life" aria-selected="false">Studio Life</button>
+        </div>
+        <div class="jn-search">
+          <input type="search" placeholder="Search articles…" aria-label="Search articles" class="jn-search-input" id="journal-search" />
+          <button class="jn-search-btn" aria-label="Search">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================== ARTICLES GRID ===================== -->
+    <section class="jn-grid-section">
+      <div class="container">
+        <div class="jn-grid" id="articles-grid">
+
+          <article class="jn-card" data-topic="architecture">
+            <a href="#" class="jn-card-img-wrap">
+              <div class="jn-card-img" style="background:#1c1f1e;" aria-label="Architecture article"></div>
+            </a>
+            <div class="jn-card-body">
+              <div class="jn-card-meta"><span class="jn-cat">Architecture</span><span class="jn-dot">·</span><span class="jn-read">5 Min Read</span></div>
+              <h2 class="jn-card-title"><a href="#">Designing for Context: Architecture that Belongs</a></h2>
+              <p class="jn-card-desc">How thoughtful design responds to its surroundings and creates lasting impact.</p>
+              <a href="#" class="jn-read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="jn-card" data-topic="branding">
+            <a href="#" class="jn-card-img-wrap">
+              <div class="jn-card-img" style="background:#1a0f0f;" aria-label="Branding article"></div>
+            </a>
+            <div class="jn-card-body">
+              <div class="jn-card-meta"><span class="jn-cat">Branding</span><span class="jn-dot">·</span><span class="jn-read">4 Min Read</span></div>
+              <h2 class="jn-card-title"><a href="#">Building Timeless Brands in a Fast-Changing World</a></h2>
+              <p class="jn-card-desc">Why clarity, consistency and purpose are the foundation of memorable brands.</p>
+              <a href="#" class="jn-read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="jn-card" data-topic="product-design">
+            <a href="#" class="jn-card-img-wrap">
+              <div class="jn-card-img" style="background:#141414;" aria-label="Product Design article"></div>
+            </a>
+            <div class="jn-card-body">
+              <div class="jn-card-meta"><span class="jn-cat">Product Design</span><span class="jn-dot">·</span><span class="jn-read">6 Min Read</span></div>
+              <h2 class="jn-card-title"><a href="#">Form Meets Function: The Product Design Process</a></h2>
+              <p class="jn-card-desc">Our approach to creating products that are beautiful, useful and meaningful.</p>
+              <a href="#" class="jn-read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="jn-card" data-topic="architecture">
+            <a href="#" class="jn-card-img-wrap">
+              <div class="jn-card-img" style="background:#181a1c;" aria-label="Architecture project"></div>
+            </a>
+            <div class="jn-card-body">
+              <div class="jn-card-meta"><span class="jn-cat">Architecture</span><span class="jn-dot">·</span><span class="jn-read">5 Min Read</span></div>
+              <h2 class="jn-card-title"><a href="#">Serenity in Structure: Inside Our Recent Project</a></h2>
+              <p class="jn-card-desc">A peek into the design journey of a tranquil retreat that blends with nature.</p>
+              <a href="#" class="jn-read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="jn-card" data-topic="design">
+            <a href="#" class="jn-card-img-wrap">
+              <div class="jn-card-img" style="background:#1a1715;" aria-label="Design article"></div>
+            </a>
+            <div class="jn-card-body">
+              <div class="jn-card-meta"><span class="jn-cat">Design</span><span class="jn-dot">·</span><span class="jn-read">4 Min Read</span></div>
+              <h2 class="jn-card-title"><a href="#">The Power of Materiality in Modern Design</a></h2>
+              <p class="jn-card-desc">Exploring how materials shape emotions, experiences and spaces.</p>
+              <a href="#" class="jn-read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="jn-card" data-topic="studio-life">
+            <a href="#" class="jn-card-img-wrap">
+              <div class="jn-card-img" style="background:#1e1812;" aria-label="Studio Life article"></div>
+            </a>
+            <div class="jn-card-body">
+              <div class="jn-card-meta"><span class="jn-cat">Studio Life</span><span class="jn-dot">·</span><span class="jn-read">3 Min Read</span></div>
+              <h2 class="jn-card-title"><a href="#">People, Process, Purpose: Life at NDS</a></h2>
+              <p class="jn-card-desc">How our studio culture fuels creativity and drives exceptional work.</p>
+              <a href="#" class="jn-read-more">Read More →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED ARTICLE ===================== -->
+    <section class="jn-featured">
+      <div class="jn-featured-inner">
+        <div class="jn-feat-img" data-animate>
+          <div class="jn-feat-img-ph" aria-label="Sustainable design article"></div>
+          <span class="jn-feat-tag">Featured Article</span>
+        </div>
+        <div class="jn-feat-content" data-animate data-animate-delay="120">
+          <p class="eyebrow eyebrow--yellow">Featured Article</p>
+          <h2 class="jn-feat-title">Sustainable Design:<br />Creating a Better Tomorrow</h2>
+          <p class="jn-feat-desc">Sustainability is at the heart of everything we do. Here's how we integrate responsible choices into design that stands the test of time.</p>
+          <a href="#" class="jn-read-more">Read Full Story →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section class="jn-newsletter">
+      <div class="container jn-nl-inner">
+        <div class="jn-nl-copy" data-animate>
+          <div class="jn-nl-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="3" y="6" width="26" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 10l13 9 13-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <p class="jn-nl-eyebrow">Stay Inspired</p>
+          <h2 class="jn-nl-title">Subscribe to our journal</h2>
+          <p class="jn-nl-sub">Get the latest stories, insights and ideas delivered to your inbox.</p>
+        </div>
+        <div class="jn-nl-form" data-animate data-animate-delay="100">
+          <div class="jn-nl-row">
+            <input type="email" placeholder="Enter your email address" class="jn-nl-input" aria-label="Email address" />
+            <button class="button jn-nl-btn">Subscribe <span class="btn-arrow">↗</span></button>
+          </div>
+          <p class="jn-nl-note">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== SHARED FOOTER ===================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo-wrap footer-logo" href="./index.html" aria-label="Nele Design Studio home">
+          <span class="logo-bg">
+            <img src="../assets/NDS_Logo.png" alt="Nele Design Studio logo" />
+          </span>
+        </a>
+        <p class="footer-tagline">
+          A multidisciplinary design studio specializing in
+          architectural visualization, graphic design and
+          product design.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <ul>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./services.html">Our Services</a></li>
+          <li><a href="./work.html">Our Work</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+          <li><a href="./journal.html">Journal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Services</h3>
+        <ul>
+          <li><a href="./services.html#architectural-visualization">Architectural Visualization</a></li>
+          <li><a href="./services.html#graphic-design">Graphic Design</a></li>
+          <li><a href="./services.html#product-design">Product Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Get In Touch</h3>
+        <address>
+          <a class="footer-contact-item" href="tel:+919980463014">+91 99804 63014</a>
+          <a class="footer-contact-item" href="mailto:neledesignstudio@gmail.com">neledesignstudio@gmail.com</a>
+          <span class="footer-contact-item">First Floor, Vijayasree Layout, 1,<br/>behind Brigade 7 Gardens, Turahalli,<br/>Subramanyapura, Bengaluru,<br/>Karnataka 560061</span>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Nele Design Studio. All rights reserved.</p>
+        <a href="./privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const menuBtn = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const closeBtn = document.getElementById('mobile-nav-close');
+    const setMobileNav = (open) => {
+      mobileNav?.classList.toggle('open', open);
+      mobileNav?.setAttribute('aria-hidden', String(!open));
+      menuBtn?.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('menu-open', open);
+    };
+    menuBtn?.addEventListener('click', () => setMobileNav(true));
+    closeBtn?.addEventListener('click', () => setMobileNav(false));
+    mobileNav?.querySelectorAll('a').forEach(l => l.addEventListener('click', () => setMobileNav(false)));
+
+    // Topic filter
+    const tabs = document.querySelectorAll('.jn-tab');
+    const cards = document.querySelectorAll('.jn-card');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => { t.classList.remove('jn-tab--active'); t.setAttribute('aria-selected','false'); });
+        tab.classList.add('jn-tab--active');
+        tab.setAttribute('aria-selected','true');
+        const topic = tab.dataset.topic;
+        cards.forEach(card => {
+          const show = topic === 'all' || card.dataset.topic === topic;
+          card.style.opacity = show ? '1' : '0.2';
+          card.style.pointerEvents = show ? 'auto' : 'none';
+        });
+      });
+    });
+
+    // Search
+    document.getElementById('journal-search')?.addEventListener('input', function() {
+      const q = this.value.toLowerCase();
+      cards.forEach(card => {
+        const show = !q || card.textContent.toLowerCase().includes(q);
+        card.style.opacity = show ? '1' : '0.15';
+        card.style.pointerEvents = show ? 'auto' : 'none';
+      });
+    });
+
+    // Reveal
+    const revealElements = document.querySelectorAll('[data-animate]');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const delay = entry.target.dataset.animateDelay || 0;
+            setTimeout(() => entry.target.classList.add('is-visible'), Number(delay));
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      revealElements.forEach(el => observer.observe(el));
+    } else {
+      revealElements.forEach(el => el.classList.add('is-visible'));
+    }
+
+    // Sticky header
+    const siteHeader = document.getElementById('site-header');
+    const updateHeader = () => siteHeader?.classList.toggle('scrolled', window.scrollY > 40);
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    document.querySelectorAll('[data-nav="journal"]').forEach(l => l.classList.add('nav-active'));
+  </script>
+</body>
+</html>
